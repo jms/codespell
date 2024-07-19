@@ -2,5 +2,6 @@
   name: codespell
   description: Checks for common misspellings in text files.
   entry: codespell
+  args: []
   language: python
   types: [text]
