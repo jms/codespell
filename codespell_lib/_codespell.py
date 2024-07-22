@@ -671,6 +671,9 @@ def parse_options(
         if _cfg.has_section("codespell"):
             used_cfg_files.append(cfg_file)
 
+    # debug
+    print(used_cfg_files)
+
     # Use config files
     config.read(used_cfg_files)
     if config.has_section("codespell"):
@@ -689,6 +692,10 @@ def parse_options(
 
         # Re-parse command line options to override config.
         options = parser.parse_args(list(args), namespace=options)
+
+    # debug
+    print(config)
+    print(options)
 
     if not options.files:
         options.files.append(".")

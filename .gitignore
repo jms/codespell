@@ -14,3 +14,6 @@ codespell.egg-info
 codespell_lib/_version.py
 junit-results.xml
 *.egg-info/
+.idea/
+requirements-dev.lock
+requirements.lock
